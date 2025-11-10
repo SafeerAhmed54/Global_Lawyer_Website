@@ -366,6 +366,10 @@ body {
     margin-top: 0.5rem;
 }
 
+.mt-3{
+    margin-top: 0.75rem;
+}
+
 .mt-4 {
     margin-top: 1rem;
 }
@@ -595,6 +599,11 @@ body {
     padding-bottom: 4rem;
 }
 
+.py-auto{
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
 /* === WIDTH & HEIGHT === */
 .w-full {
     width: 100%;
@@ -618,6 +627,10 @@ body {
 
 .w-30per {
     width: 30%;
+}
+
+.w-20per {
+    width: 22%;
 }
 
 .w-2-3 {
@@ -1055,6 +1068,14 @@ body {
     border-color: #4299e1;
 }
 
+.border-blue-600 {
+    border-color: #3182ce;
+}
+
+.border-red-600 {
+    border-color: #e53e3e;
+}
+
 .rounded-none {
     border-radius: 0;
 }
@@ -1373,13 +1394,16 @@ body {
 #icon-container {
     width: 70px;
     height: 70px;
-    border: 1px solid black;
     border-radius: 25px 0px 25px 0px;
 }
 
 #stats-card {
     width: 250px;
     height: 225px;
-    border: 3px solid white;
     border-radius: 75px 0px 75px 0px;
+}
+
+#attorrney-social-images {
+    width: 40px;
+    height: 40px;
 }
