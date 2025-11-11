@@ -14,10 +14,15 @@
     <!-- Navigation -->
     <nav class="navigation sticky top-0 bg-white">
         <div class="container">
-            <div class="row justify-between ">
+            <div class="row justify-between items-center">
                 <div class="logo text-lg font-semibold w-1-4">
                     <p>GLOBAL LAWMAKER</p>
                 </div>
+                <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <div id="navigation-buttons"
                     class="row text-base items-center text-black justify-between w-3-4">
                     <a href="#">Home</a>
@@ -585,6 +590,25 @@
     </footer>
 
     
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const navigationButtons = document.getElementById('navigation-buttons');
+
+        mobileMenuToggle.addEventListener('click', function() {
+            navigationButtons.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = navigationButtons.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navigationButtons.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
