@@ -603,6 +603,11 @@ body {
     padding-bottom: 4rem;
 }
 
+.py-33per{
+    padding-top: 32%;
+    padding-bottom: 32%;
+}
+
 .py-auto{
     padding-top: auto;
     padding-bottom: auto;
@@ -729,6 +734,10 @@ body {
 
 .min-h-screen {
     min-height: 100vh;
+}
+
+.min-h-screen-100 {
+    min-height: 100%;
 }
 
 .max-h-screen {
@@ -1434,3 +1443,23 @@ body {
     height: 70px;
 }
 
+/* RESPOSIVENESS FOR THE WEBPAGE */
+
+@media(max-width:567) {
+    .row{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .w-1-4{
+        width: 100%;
+    }
+
+    .w-3-4{
+        width: 100%;
+    }
+
+    .h-screen{
+        height: fit-content;
+    }
+}
