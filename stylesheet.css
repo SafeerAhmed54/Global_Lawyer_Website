@@ -1443,23 +1443,60 @@ body {
     height: 70px;
 }
 
+/* Width by Percentage */
+
+.column-60{
+    width: 60%;
+}
+.column-50{
+    width: 50%;
+}
+
+.column-33{
+    width: 33.333%;
+}
+
+.column-30{
+    width: 30%;
+}
+
+.column-25{
+    width: 25%;
+}
+
+.column-22{
+    width: 22%;
+}
+
 /* RESPOSIVENESS FOR THE WEBPAGE */
 
-@media(max-width:567) {
+@media(max-width:756px) {
     .row{
         flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
-
-    .w-1-4{
+    
+    .column-60{
         width: 100%;
     }
 
-    .w-3-4{
+    .column-50{
         width: 100%;
     }
 
-    .h-screen{
-        height: fit-content;
+    .column-33{
+        width: 100%;
+    }
+
+    .column-30{
+        width: 100%;
+    }
+
+    .column-25{
+        width: 80%;
+    }
+
+    .column-22{
+        width: 100%;
     }
 }
