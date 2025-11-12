@@ -14,18 +14,32 @@
     <!-- Navigation -->
     <nav class="navigation sticky top-0 bg-white">
         <div class="container">
-            <div class="row justify-between ">
+            <div class="flex flex-row justify-between ">
                 <div class="logo text-lg font-semibold w-1-4">
                     <p>GLOBAL LAWMAKER</p>
                 </div>
-                <div id="navigation-buttons" class="row text-base items-center text-black justify-between w-3-4">
-                    <a href="#">Home</a>
-                    <a href="#">Service</a>
-                    <a href="">Team</a>
-                    <a href="">Price</a>
-                    <a href="">Client</a>
-                    <a href="">Contact</a>
+                <div id="navigation-buttons" class="nav row text-base items-center text-black justify-between w-3-4">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#team">Team</a>
+                    <a href="#prices">Price</a>
+                    <a href="#contact">Contact</a>
                     <a href="">+92 3442270870</a>
+                </div>
+                <div class=" dropdown-div w-3-4 justify-end items-center">
+                    <button class="dropdown bg-white px-6 py-2 border-red-600 text-red-600 font-bold font-poppins">Drop
+                        Down
+                    </button>
+                    <div
+                        class="none absolute flex flex-col justify-center items-center shadow-lg p-4 mt-2 top-12 w-full h-auto bg-white right-0">
+                        <a href="#hero" class="w-full border text-center border-gray-300">Home</a>
+                        <a href="#about" class="w-full border text-center border-gray-300">About</a>
+                        <a href="#services" class="w-full border text-center border-gray-300">Services</a>
+                        <a href="#team" class="w-full border text-center border-gray-300">Team</a>
+                        <a href="#prices" class="w-full border text-center border-gray-300">Price</a>
+                        <a href="#contact" class="w-full border text-center border-gray-300">Contact</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -33,22 +47,22 @@
 
     <!-- Hero Section -->
     <section class="hero">
-    <div class="container">
-        <div id="hero-background" class="row">
-            <div class="column-50 h-auto flex flex-row justify-end items-center py-33per">
-                <div class="text-container">
-                    <h2 class="text-white font-normal mb-0">What we do?</h2>
-                    <h1 class="text-white font-normal mb-0 mt-0">Welcome to the <span class="text-red-600">Global
-                            Lawyer</span></h1>
-                    <p class="text-sm text-white mt-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam doloremque, incidunt ipsam vel praesentium nulla natus
-                        maiores, quidem, impedit adipisci ducimus.
-                    </p>
-                    <button class="bg-red-600 text-white px-6 py-2 border-0 rounded font-semibold">GET
-                        STARTED</button>
+        <div class="container">
+            <div id="hero-background" class="row">
+                <div class="column-50 h-auto flex flex-row justify-end items-center py-33per">
+                    <div class="text-container">
+                        <h2 class="text-white font-normal mb-0">What we do?</h2>
+                        <h1 class="text-white font-normal mb-0 mt-0">Welcome to the <span class="text-red-600">Global
+                                Lawyer</span></h1>
+                        <p class="text-sm text-white mt-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quisquam doloremque, incidunt ipsam vel praesentium nulla natus
+                            maiores, quidem, impedit adipisci ducimus.
+                        </p>
+                        <button class="bg-red-600 text-white px-6 py-2 border-0 rounded font-semibold">GET
+                            STARTED</button>
+                    </div>
                 </div>
-            </div>
-            <div class="column-50 h-auto flex flex-row justify-center items-center">
+                <div class="column-50 h-auto flex flex-row justify-center items-center">
                     <form action=""
                         class="flex flex-col justify-center items-center gap-4 bg-white p-8 w-3-4 max-w-md shadow-lg">
                         <h2 class="text-2xl font-semibold text-center">Get Your Estimate</h2>
@@ -65,13 +79,13 @@
                         <input type="submit" value="SUBMIT NOW"
                             class="w-full py-4 bg-red-600 border-0 rounded text-white font-bold cursor-pointer hover:bg-red-700 transition">
                     </form>
+                </div>
             </div>
         </div>
-    </div>
     </section>
 
     <!-- About / Welcome Section -->
-    <section class="about">
+    <section id="about" class="about">
         <div class="container mt-8 mb-8">
             <div class="row">
                 <div class="column-50 flex flex-row justify-end items-center h-auto">
@@ -223,7 +237,7 @@
                 </div>
                 <div class="column-30 h-auto bg-transparent shadow-lg rounded">
                     <div class="flex justify-center items-center bg-transparent shadow-lg p-2">
-                        <img src="/images/drug law.jpg" alt="divorce.png" class="w-full h-auto rounded">
+                        <img src="/images/drugslaw.jpg" alt="divorce.png" class="w-full h-auto rounded">
                     </div>
                     <div>
                         <h3 class="text-center">Drug Law</h3>
@@ -248,7 +262,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="services bg-gray-400 py-8">
+    <section id="services" class="services bg-gray-400 py-8">
         <div class="container py-8 ">
             <div class="row justify-center items-center gap-x-4 gap-y-4">
                 <div class="w-full h-auto">
@@ -336,7 +350,7 @@
     </section>
 
     <!-- Team Section -->
-    <section class="team">
+    <section id="team" class="team">
         <div class="container py-8">
             <div class="row justify-center gap-x-4 gap-y-4 ">
                 <div class="w-full h-auto">
@@ -460,7 +474,7 @@
     </section>
 
     <!-- Package Section -->
-    <section class="packages bg-gray-300">
+    <section id="prices" class="packages bg-gray-300">
         <div class="container py-8">
             <div class="row justify-center items-center gap-x-8 gap-y-4">
                 <div class="w-full">
@@ -468,7 +482,8 @@
                     <p class="mx-auto text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     </p>
                 </div>
-                <div class="column-25 h-auto rounded-2xl shadow-xl flex flex-col justify-center items-center p-4 bg-white">
+                <div
+                    class="column-25 h-auto rounded-2xl shadow-xl flex flex-col justify-center items-center p-4 bg-white">
                     <h2 class="block font-normal">Basic</h2>
                     <h1 class="text-6xl mb-1 mt-1 font-normal text-red-600">62$</h1>
                     <p class="w-full text-center text-gray-600">Per Month</p>
@@ -479,7 +494,8 @@
                     <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
                     <button class="bg-red-600 text-xl text-white border-0 rounded px-6 py-2">Buy Now</button>
                 </div>
-                <div class="column-25 h-auto rounded-2xl shadow-xl flex flex-col justify-center items-center p-4 bg-white">
+                <div
+                    class="column-25 h-auto rounded-2xl shadow-xl flex flex-col justify-center items-center p-4 bg-white">
                     <h2 class="block font-normal">Corporate</h2>
                     <h1 class="text-6xl mb-1 mt-1 font-normal text-red-600">247$</h1>
                     <p class="w-full text-center text-gray-600">Per Month</p>
@@ -490,7 +506,8 @@
                     <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
                     <button class="bg-red-600 text-xl text-white border-0 rounded px-6 py-2">Buy Now</button>
                 </div>
-                <div class="column-25 h-auto rounded-2xl shadow-xl flex flex-col justify-center items-center p-4 bg-white">
+                <div
+                    class="column-25 h-auto rounded-2xl shadow-xl flex flex-col justify-center items-center p-4 bg-white">
                     <h2 class="block font-normal">Premium</h2>
                     <h1 class="text-6xl mb-1 mt-1 font-normal text-red-600">475$</h1>
                     <p class="w-full text-center text-gray-600">Per Month</p>
@@ -506,9 +523,9 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container py-8">
-            <div class="row justify-center items-center gap-y-12">
+            <div class="row justify-center items-center gap-x-12 gap-y-12">
                 <div class="w-full flex justify-around items-center">
                     <div class="w-2-3">
                         <h1 class="text-center text-3xl">GET FREE <span class="text-red-600">QUOTE</span></h1>
@@ -520,55 +537,76 @@
                     </div>
                 </div>
                 <div class="column-30 flex flex-col justify-center item-stretch">
-                    <div class="flex flex-row gap-8 justify-start items-center">
-                        <div id="contact-icons"
-                            class="w-1-4 flex justify-center items-center border border-red-600 shadow-xl">
-                            <img src="/images/Contact_Icons/home.png" alt="court.png" class="w-1-2 h-auto">
+                    <div class="flex flex-row gap-8 justify-center items-center border-b border-gray-300 py-2">
+                        <div class="w-1-4 flex justify-center items-start ">
+                            <div id="contact-icons" class="flex justify-center items-center border border-red-600 shadow-xl">
+                                <img src="/images/Contact_Icons/home.png" alt="court.png" class="w-1-2 h-auto">
+                            </div>
                         </div>
-                        <div class="w-3-4 text-sm">
-                            <h3>ADDRESS:</h3>
-                            <p class="text-gray-600">8500, Street 05, Range Road, Rawalpindi.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex flex-row gap-8 justify-start items-center">
-                        <div id="contact-icons"
-                            class="w-1-4 flex justify-center items-center border border-red-600 shadow-xl">
-                            <img src="/images/Contact_Icons/email.png" alt="medical.png" class="w-1-2 h-auto">
-                        </div>
-                        <div class="w-3-4 text-sm">
-                            <h3>EMAIL ADDRESS:</h3>
-                            <p class="text-gray-600">INFO.GLOABALLAWYER@CO.COM<br>
-                                INFO.GLOABALLAWYER@CO.COM
-                            </p>
+                        <div class="w-3-4 text-sm flex flex-row justify-start items-center">
+                            <div>
+                                <h3 class="mt-2 mb-2">ADDRESS:</h3>
+                                <p class="mt-2 mb-2 text-gray-600 ">8500, Street 05, Range Road, Rawalpindi.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex flex-row gap-8 justify-start items-center">
-                        <div id="contact-icons"
-                            class="w-1-4 flex justify-center items-center border border-red-600 shadow-xl">
-                            <img src="/images/Contact_Icons/telephone.png" alt="person.png" class="w-1-2 h-auto">
+                    <div class="flex flex-row gap-8 justify-center items-center border-b border-gray-300 py-2">
+                        <div class="w-1-4 flex justify-center items-start ">
+                            <div id="contact-icons" class="flex justify-center items-center border border-red-600 shadow-xl">
+                                <img src="/images/Contact_Icons/email.png" alt="court.png" class="w-1-2 h-auto">
+                            </div>
                         </div>
-                        <div class="w-3-4 text-sm">
-                            <h3>PHONE:</h3>
-                            <p class="text-gray-600">+92-3442270870 <br>
-                                +92-3442270870
-                            </p>
+                        <div class="w-3-4 text-sm flex flex-row justify-start items-center">
+                            <div>
+                                <h3 class="mt-2 mb-2">EMAIL ADDRESS:</h3>
+                                <p class="mt-2 mb-2 text-gray-600">INFO.GLOBALLAWYER@LTD.COM INFO.GLOBALLAWYER@LTD.COM
+                                </p>
+                            </div>
                         </div>
                     </div>
+                    <div class="flex flex-row gap-8 justify-center items-center border-b border-gray-300 py-2">
+                        <div class="w-1-4 flex justify-center items-start ">
+                            <div id="contact-icons" class="flex justify-center items-center border border-red-600 shadow-xl">
+                                <img src="/images/Contact_Icons/telephone.png" alt="court.png" class="w-1-2 h-auto">
+                            </div>
+                        </div>
+                        <div class="w-3-4 text-sm flex flex-row justify-start items-center">
+                            <div>
+                                <h3 class="mt-2 mb-2">PHONE:</h3>
+                                <p class="mt-2 mb-2 text-gray-600">+92-3442270870 +92-3442270870
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                <form action="" class="column-60 flex flex-row flex-wrap justify-between item-stretch gap-y-4">
-                    <input type="text" name="name" id="name" placeholder="Name"
-                        class=" w-1-4 py-2 px-4 h-10per rounded border-1 border-gray-400">
-                    <input type="email" name="email" id="email" placeholder="Email"
-                        class=" w-1-4 py-2 px-4 h-10per rounded border-1 border-gray-400">
-                    <input type="tel" name="phone" id="phone" placeholder="Phone"
-                        class=" w-1-4 py-2 px-4 h-10per rounded border-1 border-gray-400">
-                    <input type="address" name="address" id="address" placeholder="Address"
-                        class="w-full py-4 px-3 h-10per rounded border-gray-400">
-                    <textarea name="message" id="message"
-                        class=" w-full py-2 px-4 h-20per rounded border-gray-400">Messgae</textarea>
-                    <input type="submit"
-                        class=" w-full py-2 px-4 h-20per bg-red-600 rounded border-0 text-white text-xl font-bold">
+                <form action="" class="column-50 flex flex-row flex-wrap justify-between item-stretch gap-4">
+                    <div class="column-30 h-48px ">
+                        <input type="text" name="name" id="name" placeholder="Name" class="flex-shrink-2 h-48px rounded border border-gray-300 p-2 font-poppins">
+                    </div>
+
+                    <div class="column-30">
+                        <input type="email" name="email" id="email" placeholder="Email" class="flex-shrink-2 h-48px rounded border border-gray-300 p-2 font-poppins">
+                    </div>
+
+                    <div class="column-30">
+                        <input type="tel" name="phone" id="phone" placeholder="Phone" class="flex-shrink-2 h-48px rounded border border-gray-300 p-2 font-poppins">
+                    </div>
+
+                    <div class="w-full">
+                        <input type="address" name="address" id="address" placeholder="Address" class="h-48px rounded border border-gray-300 p-2 font-poppins">
+                    </div>
+
+                    <div class="w-full">
+                        <textarea name="message" id="message" placeholder="Message" class="h-100px rounded border border-gray-300 p-2 font-poppins"></textarea>
+                    </div>
+
+                    <div class="w-full">
+                        <input type="submit" class=" w-full h-auto h-48px rounded border-0 p-2 font-poppins bg-red-600 text-white text-lg font-semibold ">
+                    </div>
+
+
                 </form>
             </div>
         </div>
