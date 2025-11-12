@@ -1405,8 +1405,17 @@ body {
 }
 
 .hero {
-    background-image: url(/images/court.jpg);
+    background-image: url(/images/mainpage2.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.stats {
+    background-image: url(/images/court-stats.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .margin-left-auto {
