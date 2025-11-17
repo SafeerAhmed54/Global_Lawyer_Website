@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="stylesheet.css">
     <title>GLOBAL LAWMAKER
     </title>
+    <script>
+        function dropdownFunction(){
+            document.getElementById("dropdown").style.display = "block";
+        }
+    </script>
 </head>
 
 <body>
@@ -28,8 +33,8 @@
                     <a href="#contact">Contact</a>
                     <a href="">+92 3442270870</a>
                 </div>
-                <div class=" dropdown-div w-3-4 justify-end items-center">
-                    <button class="dropdown bg-white px-6 py-2 border-red-600 text-red-600 font-bold font-poppins">Drop
+                <div id="dropdown" class=" dropdown-div w-3-4 justify-end items-center">
+                    <button onclick="dropdownFunction()" class="dropdown bg-white px-6 py-2 border-red-600 text-red-600 font-bold font-poppins">Drop
                         Down
                     </button>
                     <div
