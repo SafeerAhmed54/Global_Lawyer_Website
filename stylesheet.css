@@ -1,3 +1,7 @@
+/* ===================================
+   GLOBAL STYLES & IMPORTS
+   =================================== */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 html {
@@ -6,6 +10,8 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -28,10 +34,76 @@ button {
     font-weight: 500;
 }
 
+/* ===================================
+   LAYOUT & CONTAINER
+   =================================== */
+
+.border-box {
+    box-sizing: border-box;
+}
+
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 1100px;
     margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    min-width: 250px;
+}
+
+.column-60 {
+    width: 60%;
+}
+
+.column-50 {
+    width: 50%;
+}
+
+.column-33 {
+    width: 33.333%;
+}
+
+.column-30 {
+    width: 30%;
+}
+
+.column-25 {
+    width: 26%;
+}
+
+.column-22 {
+    width: 23%;
+}
+
+/* ===================================
+   NAVIGATION
+   =================================== */
+
+nav {
+    position: relative;
+}
+
+#navigation-buttons a {
+    text-decoration: none;
+}
+
+#navigation-buttons a:link {
+    color: rgb(255, 0, 0);
+}
+
+#navigation-buttons a:visited {
+    color: black;
+}
+
+#navigation-buttons a:hover {
+    color: rgb(117, 117, 117);
 }
 
 .dropdown-div {
@@ -41,6 +113,538 @@ button {
 .dropdown:hover+div {
     display: flex !important;
 }
+
+/* ===================================
+   HERO SECTION
+   =================================== */
+
+.hero {
+    padding: 12rem 0rem;
+    background-image: url(/images/mainpage2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.hero-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 55%;
+    height: auto;
+}
+
+.hero-form-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 45%;
+    height: auto;
+}
+
+.hero-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    padding: 1.5rem;
+    width: 75%;
+    max-width: 28rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-bottom: 5px solid red;
+}
+
+/* ===================================
+   ABOUT SECTION
+   =================================== */
+
+.about {
+    padding: 2rem 0rem;
+}
+
+.about-column-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+
+.about-column-right {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+}
+
+.feature-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 25px 0px 25px 0px;
+    transition: all 0.5s ease;
+}
+
+.feature-icon:hover {
+    border-radius: 2px;
+    box-shadow: 0 0 15px black;
+}
+
+/* ===================================
+   STATS SECTION
+   =================================== */
+
+.stats {
+    padding: 2rem 0rem;
+    background-image: url(/images/court-stats.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.stats-card {
+    width: 250px;
+    height: 225px;
+    border-radius: 100px 0px 100px 0px;
+    border: 4px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+    width: 250px;
+    height: 225px;
+    border-radius: 0px 100px 0px 100px;
+    box-shadow: 0px 0px 100px white;
+}
+
+/* ===================================
+   PRACTICE SECTION
+   =================================== */
+
+.practice-card {
+    width: 32%;
+    height: auto;
+    background-color: transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.375rem;
+}
+
+.practice-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.practice-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+}
+
+.practice-img:hover {
+    transform: rotate(2deg);
+}
+
+.practice-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 0.5rem;
+}
+
+/* ===================================
+   SERVICES SECTION
+   =================================== */
+
+.service-card {
+    width: 25%;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.375rem;
+    padding: 2rem;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    border: 1px solid #dc2626;
+    margin: auto;
+}
+
+
+
+
+#icon-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 25px 0px 25px 0px;
+}
+
+/* ===================================
+   TEAM SECTION
+   =================================== */
+
+.team-card {
+    width: 23%;
+    height: auto;
+    background-color: transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+.social-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6b7280;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.social-icons-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+#attorrney-social-images {
+    width: 40px;
+    height: 40px;
+}
+
+/* ===================================
+   CALL SECTION
+   =================================== */
+
+   .call-to-action {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ===================================
+   PACKAGES SECTION
+   =================================== */
+
+.package-card {
+    width: 28%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+}
+
+.package-price {
+    font-size: 3.75rem;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+    font-weight: 400;
+    color: #e53e3e;
+}
+
+.package-period {
+    width: 100%;
+    text-align: center;
+    color: #718096;
+}
+
+.package-feature {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #000000;
+    color: #718096;
+}
+
+.package-btn {
+    background-color: #e53e3e;
+    font-size: 1.25rem;
+    color: white;
+    border: 0;
+    border-radius: 0.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.package-btn:hover {
+    background-color: #792121;
+}
+
+
+/* ===================================
+   CONTACT SECTION
+   =================================== */
+.contact-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-column {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.contact-icon-wrapper {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-text-wrapper {
+    width: 75%;
+    font-size: 0.875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dc2626;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+#contact-icons {
+    width: 60px;
+    height: 60px;
+}
+
+.form-columns {
+    width: 65%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.form-input {
+    width: 100%;
+    height: 48px;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+}
+
+.form-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+}
+
+.form-submit {
+    width: 100%;
+    padding: 1rem;
+    background-color: #dc2626;
+    border: 0;
+    border-radius: 0.375rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+    background-color: #8f3c3c;
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+.footer-text {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+/* ===================================
+   BUTTONS
+   =================================== */
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 150ms;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #dc2626;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: 0;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #751e1e;
+}
+
+.btn-secondary {
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+    border: 0;
+    border-radius: 0.375rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #333;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+/* ===================================
+   SHARED/UTILITY CLASSES
+   =================================== */
+
+.border-red {
+    border-color: #e53e3e;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 60px;
+}
+
+.heading-paragraph {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 767px;
+}
+
+.text-container {
+    width: 100%;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.margin-left-auto {
+    margin-left: 9rem;
+}
+
+.margin-top-auto {
+    margin-top: 10rem;
+}
+
+.margin-bottom-auto {
+    margin-bottom: 10rem;
+}
+
+/* ===================================
+   UTILITY CLASSES - DISPLAY
+   =================================== */
 
 .none {
     display: none !important;
@@ -73,6 +677,10 @@ button {
 .hidden {
     display: none;
 }
+
+/* ===================================
+   UTILITY CLASSES - FLEXBOX
+   =================================== */
 
 .flex-row {
     flex-direction: row;
@@ -137,6 +745,10 @@ button {
 .justify-evenly {
     justify-content: space-evenly;
 }
+
+/* ===================================
+   UTILITY CLASSES - GAP
+   =================================== */
 
 .gap-1 {
     gap: 0.25rem;
@@ -246,6 +858,10 @@ button {
     row-gap: 3rem;
 }
 
+/* ===================================
+   UTILITY CLASSES - GRID
+   =================================== */
+
 .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -269,6 +885,10 @@ button {
 .grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
 }
+
+/* ===================================
+   UTILITY CLASSES - MARGIN
+   =================================== */
 
 .m-0 {
     margin: 0;
@@ -504,6 +1124,10 @@ button {
     margin-right: auto;
 }
 
+/* ===================================
+   UTILITY CLASSES - PADDING
+   =================================== */
+
 .p-0 {
     padding: 0;
 }
@@ -639,6 +1263,10 @@ button {
     padding-bottom: auto;
 }
 
+/* ===================================
+   UTILITY CLASSES - WIDTH & HEIGHT
+   =================================== */
+
 .w-full {
     width: 100%;
 }
@@ -683,7 +1311,6 @@ button {
     width: 75%;
 }
 
-
 .h-full {
     height: 100%;
 }
@@ -707,7 +1334,6 @@ button {
 .h-100px {
     height: 100px;
 }
-
 
 .h-screen {
     height: 100vh;
@@ -776,6 +1402,10 @@ button {
 .max-h-screen {
     max-height: 100vh;
 }
+
+/* ===================================
+   UTILITY CLASSES - TYPOGRAPHY
+   =================================== */
 
 .text-xs {
     font-size: 0.75rem;
@@ -906,6 +1536,10 @@ button {
 .leading-loose {
     line-height: 2;
 }
+
+/* ===================================
+   UTILITY CLASSES - COLORS
+   =================================== */
 
 .text-white {
     color: #ffffff;
@@ -1071,6 +1705,10 @@ button {
     background-color: #9f7aea;
 }
 
+/* ===================================
+   UTILITY CLASSES - BORDERS
+   =================================== */
+
 .border {
     border-width: 1px;
     border-style: solid;
@@ -1170,6 +1808,10 @@ button {
     border-radius: 9999px;
 }
 
+/* ===================================
+   UTILITY CLASSES - SHADOWS & EFFECTS
+   =================================== */
+
 .shadow-sm {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
@@ -1193,6 +1835,10 @@ button {
 .shadow-none {
     box-shadow: none;
 }
+
+/* ===================================
+   UTILITY CLASSES - POSITION
+   =================================== */
 
 .static {
     position: static;
@@ -1241,6 +1887,10 @@ button {
     left: 0;
 }
 
+/* ===================================
+   UTILITY CLASSES - OVERFLOW & OPACITY
+   =================================== */
+
 .overflow-auto {
     overflow: auto;
 }
@@ -1285,6 +1935,10 @@ button {
     opacity: 1;
 }
 
+/* ===================================
+   UTILITY CLASSES - CURSOR
+   =================================== */
+
 .cursor-auto {
     cursor: auto;
 }
@@ -1296,6 +1950,10 @@ button {
 .cursor-not-allowed {
     cursor: not-allowed;
 }
+
+/* ===================================
+   UTILITY CLASSES - TRANSITIONS
+   =================================== */
 
 .transition {
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
@@ -1333,6 +1991,10 @@ button {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ===================================
+   UTILITY CLASSES - HOVER STATES
+   =================================== */
+
 .hover\:bg-blue-600:hover {
     background-color: #3182ce;
 }
@@ -1365,385 +2027,9 @@ button {
     transform: scale(1.05);
 }
 
-.btn {
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 150ms;
-    display: inline-block;
-    text-align: center;
-}
-
-.btn-primary {
-    background-color: #4299e1;
-    color: #ffffff;
-}
-
-.btn-primary:hover {
-    background-color: #3182ce;
-}
-
-.btn-secondary {
-    background-color: #718096;
-    color: #ffffff;
-}
-
-.btn-secondary:hover {
-    background-color: #4a5568;
-}
-
-.card {
-    background-color: #ffffff;
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
-.col {
-    flex: 1;
-    min-width: 250px;
-}
-
-nav {
-    position: relative;
-}
-
-#navigation-buttons a {
-    text-decoration: none;
-}
-
-#navigation-buttons a:link {
-    color: black;
-}
-
-#navigation-buttons a:visited {
-    color: black;
-}
-
-#navigation-buttons a:hover {
-    color: rgb(117, 117, 117);
-}
-
-#navigation-buttons a:link {
-    color: rgb(255, 0, 0);
-}
-
-.hero {
-    background-image: url(/images/mainpage2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.stats {
-    background-image: url(/images/court-stats.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.margin-left-auto {
-    margin-left: 9rem;
-}
-
-.margin-top-auto {
-    margin-top: 10rem;
-}
-
-.margin-bottom-auto {
-    margin-bottom: 10rem;
-}
-
-#icon-container {
-    width: 70px;
-    height: 70px;
-    border-radius: 25px 0px 25px 0px;
-}
-
-#stats-card {
-    width: 250px;
-    height: 225px;
-    border-radius: 75px 0px 75px 0px;
-}
-
-#attorrney-social-images {
-    width: 40px;
-    height: 40px;
-}
-
-#contact-icons {
-    width: 60px;
-    height: 60px;
-}
-
-.border-red {
-    border-color: #e53e3e;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    width: 60px;
-}
-
-.heading-paragraph {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 767px;
-}
-
-.column-60 {
-    width: 60%;
-}
-
-.column-50 {
-    width: 50%;
-}
-
-.column-33 {
-    width: 33.333%;
-}
-
-.column-30 {
-    width: 30%;
-}
-
-.column-25 {
-    width: 26%;
-}
-
-.column-22 {
-    width: 23%;
-}
-
-.hero-column {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    width: 55%;
-    height: auto;
-    padding-top: 33%;
-    padding-bottom: 33%;
-}
-
-.hero-form-column {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    width: 45%;
-    height: auto;
-}
-
-.hero-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    background-color: white;
-    padding: 1.5rem;
-    width: 75%;
-    max-width: 28rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    border-bottom: 5px solid red;
-}
-
-.about-column {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    width: 50%;
-    height: auto;
-}
-
-.practice-card {
-    width: 32%;
-    height: auto;
-    background-color: transparent;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 0.375rem;
-}
-
-.service-card {
-    width: 25%;
-    height: auto;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 0.375rem;
-    padding: 2rem;
-}
-
-.team-card {
-    width: 23%;
-    height: auto;
-    background-color: transparent;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 1rem;
-}
-
-.package-card {
-    width: 28.5%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background-color: white;
-}
-
-.contact-column {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.form-columns {
-  width: 65%;
-  display: flex;
-  flex-flow: row wrap;        
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 1rem;                 
-}
-
-.icon-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem;
-    border: 1px solid #dc2626;
-    margin: auto;
-}
-
-.social-icon-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #6b7280;
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
-.contact-icon-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #dc2626;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-.stats-card {
-    border: 4px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-input {
-    width: 100%;
-    height: 48px;
-    padding: 0.5rem;
-    border: 1px solid #d1d5db;
-    border-radius: 0.25rem;
-
-}
-
-.form-textarea {
-    width: 100%;
-    height: 100px;
-    padding: 0.5rem;
-    border: 1px solid #d1d5db;
-    border-radius: 0.25rem;
-}
-
-.form-submit {
-    width: 100%;
-    padding: 1rem;
-    background-color: #dc2626;
-    border: 0;
-    border-radius: 0.375rem;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.form-submit:hover {
-    background-color: #8f3c3c;
-}
-
-.btn-primary {
-    background-color: #dc2626;
-    color: white;
-    padding: 0.5rem 1.5rem;
-    border: 0;
-    border-radius: 0.375rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #751e1e;
-}
-
-.btn-secondary {
-    background-color: black;
-    color: white;
-    padding: 1.5rem;
-    border: 0;
-    border-radius: 0.375rem;
-    font-weight: bold;
-    font-size: 1.25rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-secondary:hover {
-    background-color: #333;
-}
-
-.text-container {
-    width: 100%;
-}
-
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.flex-col {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-}
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
 
 @media(max-width:756px) {
     .row {

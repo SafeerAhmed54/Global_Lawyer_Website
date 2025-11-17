@@ -12,13 +12,13 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navigation top-0 bg-white">
+    <nav class="navigation sticky top-0 bg-white">
         <div class="container">
             <div class="flex flex-row justify-between ">
                 <div class="logo text-xl font-semibold w-1-4">
                     <p>GLOBAL LAWMAKER</p>
                 </div>
-                <div id="navigation-buttons" class="nav row text-base items-center text-black justify-between w-3-4">
+                <div id="navigation-buttons" class="nav row text-base items-center text-black justify-between w-3-4 border-box">
                     <a href="#hero">Home</a>
                     <a href="#about">About</a>
                     <a href="#services">Services</a>
@@ -88,12 +88,12 @@
 
     <!-- About / Welcome Section -->
     <section id="about" class="about">
-        <div class="container mt-6 mb-6">
+        <div class="container">
             <div class="row">
-                <div class="column-50 flex flex-row justify-end items-center h-auto">
+                <div class="about-column-left">
                     <img src="images/welcome.png" alt="welcome.png" class="w-full h-auto">
                 </div>
-                <div class="column-50 flex flex-row justify-end items-center h-auto">
+                <div class="about-column-right">
                     <div class="text-container">
                         <h1 class="text-4xl">WELCOME TO GLOBAL <span class="text-red-600">LAWYER</span></h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia
@@ -101,42 +101,36 @@
                             sint et ducimus
                         </p>
                         <div>
-                            <div class="flex flex-row gap-8 justify-start items-center">
-                                <div id="icon-container"
-                                    class="w-1-4 flex justify-center items-center border border-color-black">
+                            <div class="feature-row">
+                                <div class="feature-icon">
                                     <img src="/images/court-house.png" alt="court.png" class="w-1-2 h-auto">
                                 </div>
                                 <div class="w-3-4 text-sm">
                                     <h3>Protect Your Rights</h3>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Soluta pariatur, tenetur necessitatibus voluptas deserunt
-                                        sapiente quia ipsam magni ex ratione est?
+                                        Soluta pariatur, tenetur necessitatibus voluptas
                                     </p>
                                 </div>
                             </div>
-                            <div class="flex flex-row gap-8 justify-start items-center">
-                                <div id="icon-container"
-                                    class="w-1-4 flex justify-center items-center border border-color-black">
+                            <div class="feature-row">
+                                <div class="feature-icon">
                                     <img src="/images/medical-checkup.png" alt="medical.png" class="w-1-2 h-auto">
                                 </div>
                                 <div class="w-3-4 text-sm">
                                     <h3>Medical Treatment</h3>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Soluta pariatur, tenetur necessitatibus voluptas deserunt
-                                        sapiente quia ipsam magni ex ratione est?
+                                        Soluta pariatur, tenetur necessitatibus voluptas
                                     </p>
                                 </div>
                             </div>
-                            <div class="flex flex-row gap-8 justify-start items-center">
-                                <div id="icon-container"
-                                    class="w-1-4 flex justify-center items-center border border-color-black">
+                            <div class="feature-row">
+                                <div class="feature-icon">
                                     <img src="/images/person.png" alt="person.png" class="w-1-2 h-auto">
                                 </div>
                                 <div class="w-3-4 text-sm">
                                     <h3>We Fight for Justice</h3>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Soluta pariatur, tenetur necessitatibus voluptas deserunt
-                                        sapiente quia ipsam magni ex ratione est?
+                                        Soluta pariatur, tenetur necessitatibus voluptas
                                     </p>
                                 </div>
                             </div>
@@ -149,31 +143,31 @@
 
     <!-- Stats Section -->
     <section class="stats h-auto text-white">
-        <div class="container py-8">
+        <div class="container">
             <div class="row justify-between items-center gap-y-4">
-                <div id="stats-card" class="stats-card">
-                    <div class="flex flex-col justify-center items-center">
+                <div class="stats-card">
+                    <div class="flex-center-col">
                         <img src="/images/audience.png" alt="court.png" class="w-1-3 py-2">
                         <p class="m-1 p-1">Trusted Clients</p>
                         <h1 class="m-1 p-1 text-5xl">999</h1>
                     </div>
                 </div>
-                <div id="stats-card" class="stats-card">
-                    <div class="flex flex-col justify-center items-center">
+                <div class="stats-card">
+                    <div class="flex-center-col">
                         <img src="/images/court-house (1).png" alt="court.png" class="w-1-3 py-2">
                         <p class="m-1 p-1">Success Cases</p>
                         <h1 class="m-1 p-1 text-5xl">1500</h1>
                     </div>
                 </div>
-                <div id="stats-card" class="stats-card">
-                    <div class="flex flex-col justify-center items-center">
+                <div class="stats-card">
+                    <div class="flex-center-col">
                         <img src="/images/laptop.png" alt="court.png" class="w-1-3 py-2">
                         <p class="m-1 p-1">Case Studies</p>
                         <h1 class="m-1 p-1 text-5xl">1756</h1>
                     </div>
                 </div>
-                <div id="stats-card" class="stats-card">
-                    <div class="flex flex-col justify-center items-center">
+                <div class="stats-card">
+                    <div class="flex-center-col">
                         <img src="/images/award.png" alt="court.png" class="w-1-3 py-2">
                         <p class="m-1 p-1">Awards</p>
                         <h1 class="m-1 p-1 text-5xl">200</h1>
@@ -194,8 +188,8 @@
             </div>
             <div class="row justify-between gap-x-4 gap-y-4">
                 <div class="practice-card">
-                    <div class="flex justify-center items-center bg-transparent shadow-lg p-2">
-                        <img src="/images/divorce law.jpg" alt="divorce.png" class="w-full h-auto rounded">
+                    <div class="practice-img-container">
+                        <img src="/images/divorce law.jpg" alt="divorce.png" class="practice-img  ">
                     </div>
                     <div>
                         <h3 class="text-center mb-0">Divorce Law</h3>
@@ -206,8 +200,8 @@
                     </div>
                 </div>
                 <div class="practice-card">
-                    <div class="flex justify-center items-center bg-transparent shadow-lg p-2">
-                        <img src="/images/criminal law.jpg" alt="divorce.png" class="w-full h-auto rounded">
+                    <div class="practice-img-container">
+                        <img src="/images/criminal law.jpg" alt="divorce.png" class="practice-img">
                     </div>
                     <div>
                         <h3 class="text-center mb-0">Criminal Law</h3>
@@ -218,8 +212,8 @@
                     </div>
                 </div>
                 <div class="practice-card">
-                    <div class="flex justify-center items-center bg-transparent shadow-lg p-2">
-                        <img src="/images/personal law.jpg" alt="divorce.png" class="w-full h-auto rounded">
+                    <div class="practice-img-container">
+                        <img src="/images/personal law.jpg" alt="divorce.png" class="practice-img">
                     </div>
                     <div>
                         <h3 class="text-center mb-0">Personal Law</h3>
@@ -230,8 +224,8 @@
                     </div>
                 </div>
                 <div class="practice-card">
-                    <div class="flex justify-center items-center bg-transparent shadow-lg p-2">
-                        <img src="/images/litigation.jpg" alt="divorce.png" class="w-full h-auto rounded">
+                    <div class="practice-img-container">
+                        <img src="/images/litigation.jpg" alt="divorce.png" class="practice-img">
                     </div>
                     <div>
                         <h3 class="text-center mb-0">Litigation Law</h3>
@@ -242,8 +236,8 @@
                     </div>
                 </div>
                 <div class="practice-card">
-                    <div class="flex justify-center items-center bg-transparent shadow-lg p-2">
-                        <img src="/images/drugslaw.jpg" alt="divorce.png" class="w-full h-auto rounded">
+                    <div class="practice-img-container">
+                        <img src="/images/drugslaw.jpg" alt="divorce.png" class="practice-img">
                     </div>
                     <div>
                         <h3 class="text-center mb-0">Drug Law</h3>
@@ -254,8 +248,8 @@
                     </div>
                 </div>
                 <div class="practice-card">
-                    <div class="flex justify-center items-center bg-transparent shadow-lg p-2">
-                        <img src="/images/accident law.jpg" alt="divorce.png" class="w-full h-auto rounded">
+                    <div class="practice-img-container">
+                        <img src="/images/accident law.jpg" alt="divorce.png" class="practice-img">
                     </div>
                     <div>
                         <h3 class="text-center mb-0">Accident Law</h3>
@@ -279,7 +273,7 @@
                 </p>
             </div>
             <div class="row justify-between items-center gap-y-8">
-                <div class="column-25 h-auto bg-transparent shadow-lg rounded bg-white p-8">
+                <div class="service-card">
                     <div id="icon-container"
                         class="icon-box">
                         <img src="/images/Icons/car.png" alt="divorce.png" class="w-2-3 h-auto rounded">
@@ -291,7 +285,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="column-25 h-auto bg-transparent shadow-lg rounded bg-white p-8">
+                <div class="service-card">
                     <div id="icon-container"
                         class="icon-box">
                         <img src="/images/Icons/secure.png" alt="divorce.png" class="w-2-3 h-auto rounded">
@@ -303,7 +297,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="column-25 h-auto bg-transparent shadow-lg rounded bg-white p-8">
+                <div class="service-card">
                     <div id="icon-container"
                         class="icon-box">
                         <img src="/images/Icons/health-care.png" alt="divorce.png" class="w-2-3 h-auto rounded">
@@ -315,7 +309,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="column-25 h-auto bg-transparent shadow-lg rounded bg-white p-8">
+                <div class="service-card">
                     <div id="icon-container"
                         class="icon-box">
                         <img src="/images/Icons/person.png" alt="divorce.png" class="w-2-3 h-auto rounded">
@@ -327,7 +321,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="column-25 h-auto bg-transparent shadow-lg rounded bg-white p-8">
+                <div class="service-card">
                     <div id="icon-container"
                         class="icon-box">
                         <img src="/images/Icons/book.png" alt="divorce.png" class="w-2-3 h-auto rounded">
@@ -339,7 +333,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="column-25 h-auto bg-transparent shadow-lg rounded bg-white p-8">
+                <div class="service-card">
                     <div id="icon-container"
                         class="icon-box">
                         <img src="/images/Icons/motorcycle-side-view-silhouette.png" alt="divorce.png"
@@ -375,7 +369,7 @@
                         <h3 class="text-center mb-0 mt-3 text-3xl font-normal">ALEX</h3>
                         <p class="text-center text-sm mt-0">Personal Divorce Lawyer
                         </p>
-                        <div class="flex justify-center items-center mt-4 mb-4 gap-4">
+                        <div class="social-icons-row">
                             <div id="attorrney-social-images" class="social-icon-box">
                                 <img src="/images/Social_Icons/facebook.png" alt="facebook.png"
                                     class="mx-2 w-2-3 h-auto">
@@ -398,7 +392,7 @@
                         <h3 class="text-center mb-0 mt-3 text-3xl font-normal">JULIA</h3>
                         <p class="text-center text-sm mt-0">Personal Injury Lawyer
                         </p>
-                        <div class="flex justify-center items-center mt-4 mb-4 gap-4">
+                        <div class="social-icons-row">
                             <div id="attorrney-social-images" class="social-icon-box">
                                 <img src="/images/Social_Icons/facebook.png" alt="facebook.png"
                                     class="mx-2 w-2-3 h-auto">
@@ -421,7 +415,7 @@
                         <h3 class="text-center mb-0 mt-3 text-3xl font-normal">DANNY</h3>
                         <p class="text-center text-sm mt-0">Personal Justice Lawyer
                         </p>
-                        <div class="flex justify-center items-center mt-4 mb-4 gap-4">
+                        <div class="social-icons-row">
                             <div id="attorrney-social-images" class="social-icon-box">
                                 <img src="/images/Social_Icons/facebook.png" alt="facebook.png"
                                     class="mx-2 w-2-3 h-auto">
@@ -444,7 +438,7 @@
                         <h3 class="text-center mb-0 mt-3 text-3xl font-normal">KATE</h3>
                         <p class="text-center text-sm mt-0">Personal Contract Lawyer
                         </p>
-                        <div class="flex justify-center items-center mt-4 mb-4 gap-4">
+                        <div class="social-icons-row">
                             <div id="attorrney-social-images" class="social-icon-box">
                                 <img src="/images/Social_Icons/facebook.png" alt="facebook.png"
                                     class="mx-2 w-2-3 h-auto">
@@ -467,7 +461,7 @@
     <section class="packages bg-gray-500">
         <div class="container py-8">
             <div class="row justify-center items-center">
-                <div class="w-1-2 flex flex-col justify-center items-center">
+                <div class="call-to-action">
                     <h1 class="text-center mb-0 mt-0">CALL FOR FREE CONSULTATION</h1>
                     <h1 class="text-center mb-0 mt-0">+92 3442270870</h1>
                     <p class="mx-auto text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -493,38 +487,38 @@
                 <div
                     class="package-card">
                     <h2 class="block font-normal">Basic</h2>
-                    <h1 class="text-6xl mb-1 mt-1 font-normal text-red-600">62$</h1>
-                    <p class="w-full text-center text-gray-600">Per Month</p>
-                    <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
-                    <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
-                    <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
-                    <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
-                    <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
-                    <button class="bg-red-600 text-xl text-white border-0 rounded px-6 py-2">Buy Now</button>
+                    <h1 class="package-price">62$</h1>
+                    <p class="package-period">Per Month</p>
+                    <p class="package-feature">LOREN ISULEM</p>
+                    <p class="package-feature">LOREN ISULEM</p>
+                    <p class="package-feature">LOREN ISULEM</p>
+                    <p class="package-feature">LOREN ISULEM</p>
+                    <p class="package-feature">LOREN ISULEM</p>
+                    <button class="package-btn">Buy Now</button>
                 </div>
                 <div
                     class="package-card">
                     <h2 class="block font-normal">Corporate</h2>
-                    <h1 class="text-6xl mb-1 mt-1 font-normal text-red-600">247$</h1>
-                    <p class="w-full text-center text-gray-600">Per Month</p>
-                    <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
-                    <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
-                    <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
-                    <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
-                    <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
-                    <button class="bg-red-600 text-xl text-white border-0 rounded px-6 py-2">Buy Now</button>
+                    <h1 class="package-price">247$</h1>
+                    <p class="package-period">Per Month</p>
+                    <p class="package-feature">LOREN ISULEM</p>
+                    <p class="package-feature">LOREN ISULEM</p>
+                    <p class="package-feature">LOREN ISULEM</p>
+                    <p class="package-feature">LOREN ISULEM</p>
+                    <p class="package-feature">LOREN ISULEM</p>
+                    <button class="package-btn">Buy Now</button>
                 </div>
                 <div
                     class="package-card">
                     <h2 class="block font-normal">Premium</h2>
-                    <h1 class="text-6xl mb-1 mt-1 font-normal text-red-600">475$</h1>
-                    <p class="w-full text-center text-gray-600">Per Month</p>
-                    <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
-                    <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
-                    <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
-                    <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
-                    <p class="w-full text-center border-t border-color-black text-gray-600">LOREN ISULEM</p>
-                    <button class="bg-red-600 text-xl text-white border-0 rounded px-6 py-2">Buy Now</button>
+                    <h1 class="package-price">475$</h1>
+                    <p class="package-period">Per Month</p>
+                    <p class="package-feature">LOREN ISULEM</p>
+                    <p class="package-feature">LOREN ISULEM</p>
+                    <p class="package-feature">LOREN ISULEM</p>
+                    <p class="package-feature">LOREN ISULEM</p>
+                    <p class="package-feature">LOREN ISULEM</p>
+                    <button class="package-btn">Buy Now</button>
                 </div>
             </div>
         </div>
@@ -533,7 +527,7 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container py-8">
-            <div class="w-full flex justify-around items-center">
+            <div class="contact-header">
                     <div class="w-2-3">
                         <h1 class="text-center text-3xl">GET FREE <span class="text-red-600">QUOTE</span></h1>
                         <p class="mx-auto text-center">
@@ -545,14 +539,14 @@
                 </div>
             <div class="row justify-between items-center gap-x-12 gap-y-12">
                 <div class="contact-column item-stretch">
-                    <div class="flex flex-row gap-8 justify-center items-center border-b border-gray-300 py-2">
-                        <div class="w-1-4 flex justify-center items-start ">
+                    <div class="contact-info-row">
+                        <div class="contact-icon-wrapper ">
                             <div id="contact-icons"
                                 class="contact-icon-box">
                                 <img src="/images/Contact_Icons/home.png" alt="court.png" class="w-1-2 h-auto">
                             </div>
                         </div>
-                        <div class="w-3-4 text-sm flex flex-row justify-start items-center">
+                        <div class="contact-text-wrapper">
                             <div>
                                 <h3 class="mt-2 mb-2">ADDRESS:</h3>
                                 <p class="mt-2 mb-2 text-gray-600 ">8500, Street 05, Range Road, Rawalpindi.
@@ -560,14 +554,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-row gap-8 justify-center items-center border-b border-gray-300 py-2">
-                        <div class="w-1-4 flex justify-center items-start ">
+                    <div class="contact-info-row">
+                        <div class="contact-icon-wrapper ">
                             <div id="contact-icons"
                                 class="contact-icon-box">
                                 <img src="/images/Contact_Icons/email.png" alt="court.png" class="w-1-2 h-auto">
                             </div>
                         </div>
-                        <div class="w-3-4 text-sm flex flex-row justify-start items-center">
+                        <div class="contact-text-wrapper">
                             <div>
                                 <h3 class="mt-2 mb-2">EMAIL ADDRESS:</h3>
                                 <p class="mt-2 mb-2 text-gray-600">INFO.GLOBALLAWYER@LTD.COM INFO.GLOBALLAWYER@LTD.COM
@@ -575,14 +569,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-row gap-8 justify-center items-center border-b border-gray-300 py-2">
-                        <div class="w-1-4 flex justify-center items-start ">
+                    <div class="contact-info-row">
+                        <div class="contact-icon-wrapper ">
                             <div id="contact-icons"
                                 class="contact-icon-box">
                                 <img src="/images/Contact_Icons/telephone.png" alt="court.png" class="w-1-2 h-auto">
                             </div>
                         </div>
-                        <div class="w-3-4 text-sm flex flex-row justify-start items-center">
+                        <div class="contact-text-wrapper">
                             <div>
                                 <h3 class="mt-2 mb-2">PHONE:</h3>
                                 <p class="mt-2 mb-2 text-gray-600">+92-3442270870 +92-3442270870
@@ -633,8 +627,8 @@
         <div class="container">
             <div class="row justify-center items-center">
                 <div class="w-full h-auto">
-                    <p class="block w-full h-auto text-center text-2xl">Safeer Ahmad Rana</p>
-                    <p class="block w-full h-auto text-center text-2xl">safeerrana54@gmail.com</p>
+                    <p class="footer-text">Safeer Ahmad Rana</p>
+                    <p class="footer-text">safeerrana54@gmail.com</p>
                 </div>
 
             </div>
