@@ -34,6 +34,26 @@ button {
     font-weight: 500;
 }
 
+.dark-theme-btn-div{
+    position: fixed;
+    right: 0;
+    top: 50%;
+}
+
+.dark-theme-btn{
+    background-color: black;
+    opacity: 0.80;
+    border: 0px;
+    padding: 0.5rem 2rem;
+    color: white;
+    font-size: medium;
+    transition: all 0.5s ease;
+}
+
+.dark-theme-btn:hover{
+    background-color: #4a5568;
+}
+
 /* ===================================
    LAYOUT & CONTAINER
    =================================== */
