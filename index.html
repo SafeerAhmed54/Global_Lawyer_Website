@@ -8,9 +8,34 @@
     <title>GLOBAL LAWMAKER
     </title>
     <script>
-        function dropdownFunction(){
+        let theme = [
+            "black",
+            "white"
+        ]
+        function dropdownFunction() {
             document.getElementById("dropdown").style.display = "block";
         }
+
+        function changeTheme() {
+            document.documentElement.style.setProperty('--theme-background', theme[0]);
+            document.documentElement.style.setProperty('--theme-font-color', theme[1]);
+        }
+
+        // toggle approach: set attribute on <html>
+        let isDark = false;
+        function changeTheme() {
+            isDark = !isDark;
+            if (isDark) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.querySelector('.dark-theme-btn');
+            if (btn) btn.addEventListener('click', changeTheme);
+        });
     </script>
 </head>
 
@@ -23,7 +48,8 @@
                 <div class="logo text-xl font-semibold w-1-4">
                     <p>GLOBAL LAWMAKER</p>
                 </div>
-                <div id="navigation-buttons" class="nav row text-base items-center text-black justify-between w-3-4 border-box">
+                <div id="navigation-buttons"
+                    class="nav row text-base items-center text-black justify-between w-3-4 border-box">
                     <a href="#hero">Home</a>
                     <a href="#about">About</a>
                     <a href="#services">Services</a>
@@ -34,7 +60,8 @@
                     <a href="">+92 3442270870</a>
                 </div>
                 <div id="dropdown" class=" dropdown-div w-3-4 justify-end items-center">
-                    <button onclick="dropdownFunction()" class="dropdown bg-white px-6 py-2 border-red-600 text-red-600 font-bold font-poppins">Drop
+                    <button onclick="dropdownFunction()"
+                        class="dropdown bg-white px-6 py-2 border-red-600 text-red-600 font-bold font-poppins">Drop
                         Down
                     </button>
                     <div
@@ -74,8 +101,7 @@
                     </div>
                 </div>
                 <div class="hero-form-column">
-                    <form action=""
-                        class="hero-form">
+                    <form action="" class="hero-form">
                         <h2 class="text-2xl font-normal text-center mt-1 mb-1">Get Your Estimate</h2>
                         <input type="text" placeholder="Your Full Name *"
                             class="w-full py-2 px-2 border border-gray-300 rounded">
@@ -192,7 +218,8 @@
             <div class="w-full h-auto">
                 <h1 class="text-center text-3xl mb-6">PRACTICE <span class="text-red-600">AREA</span></h1>
                 <hr class="border-red">
-                <p class="heading-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum 
+                <p class="heading-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor
+                    sit, amet consectetur adipisicing elit. Lorem ipsum
                 </p>
             </div>
             <div class="row justify-between gap-x-4 gap-y-4">
@@ -278,13 +305,13 @@
             <div class="w-full h-auto ">
                 <h1 class="text-center text-3xl">OUR <span class="text-red-600">SERVICES</span></h1>
                 <hr class="border-red">
-                <p class="heading-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum 
+                <p class="heading-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor
+                    sit, amet consectetur adipisicing elit. Lorem ipsum
                 </p>
             </div>
             <div class="row justify-between items-center gap-y-8">
                 <div class="service-card">
-                    <div id="icon-container"
-                        class="icon-box">
+                    <div id="icon-container" class="icon-box">
                         <img src="/images/Icons/car.png" alt="divorce.png" class="w-2-3 h-auto rounded">
                     </div>
                     <div>
@@ -295,8 +322,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <div id="icon-container"
-                        class="icon-box">
+                    <div id="icon-container" class="icon-box">
                         <img src="/images/Icons/secure.png" alt="divorce.png" class="w-2-3 h-auto rounded">
                     </div>
                     <div>
@@ -307,8 +333,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <div id="icon-container"
-                        class="icon-box">
+                    <div id="icon-container" class="icon-box">
                         <img src="/images/Icons/health-care.png" alt="divorce.png" class="w-2-3 h-auto rounded">
                     </div>
                     <div>
@@ -319,8 +344,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <div id="icon-container"
-                        class="icon-box">
+                    <div id="icon-container" class="icon-box">
                         <img src="/images/Icons/person.png" alt="divorce.png" class="w-2-3 h-auto rounded">
                     </div>
                     <div>
@@ -331,8 +355,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <div id="icon-container"
-                        class="icon-box">
+                    <div id="icon-container" class="icon-box">
                         <img src="/images/Icons/book.png" alt="divorce.png" class="w-2-3 h-auto rounded">
                     </div>
                     <div>
@@ -343,8 +366,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <div id="icon-container"
-                        class="icon-box">
+                    <div id="icon-container" class="icon-box">
                         <img src="/images/Icons/motorcycle-side-view-silhouette.png" alt="divorce.png"
                             class="w-2-3 h-auto rounded">
                     </div>
@@ -364,11 +386,11 @@
     <section id="team" class="team">
         <div class="container py-8">
             <div class="w-full h-auto">
-                    <h1 class="text-center text-3xl mb-4">OUR ATTORNEYS <span class="text-red-600">TEAM</span></h1>
-                    <hr class="border-red">
-                    <p class="text-center mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    </p>
-                </div>
+                <h1 class="text-center text-3xl mb-4">OUR ATTORNEYS <span class="text-red-600">TEAM</span></h1>
+                <hr class="border-red">
+                <p class="text-center mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+            </div>
             <div class="row justify-between items-center gap-x-4 gap-y-4 ">
                 <div class="team-card">
                     <div>
@@ -476,8 +498,7 @@
                     <p class="mx-auto text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Exercitationem aperiam, necessitatibus rerum labore corrupti officia
                     </p>
-                    <button
-                        class="btn-secondary">CONTACT
+                    <button class="btn-secondary">CONTACT
                         US NOW</button>
                 </div>
             </div>
@@ -493,8 +514,7 @@
                     <p class="mx-auto text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     </p>
                 </div>
-                <div
-                    class="package-card">
+                <div class="package-card">
                     <h2 class="block font-normal">Basic</h2>
                     <h1 class="package-price">62$</h1>
                     <p class="package-period">Per Month</p>
@@ -505,8 +525,7 @@
                     <p class="package-feature">LOREN ISULEM</p>
                     <button class="package-btn">Buy Now</button>
                 </div>
-                <div
-                    class="package-card">
+                <div class="package-card">
                     <h2 class="block font-normal">Corporate</h2>
                     <h1 class="package-price">247$</h1>
                     <p class="package-period">Per Month</p>
@@ -517,8 +536,7 @@
                     <p class="package-feature">LOREN ISULEM</p>
                     <button class="package-btn">Buy Now</button>
                 </div>
-                <div
-                    class="package-card">
+                <div class="package-card">
                     <h2 class="block font-normal">Premium</h2>
                     <h1 class="package-price">475$</h1>
                     <p class="package-period">Per Month</p>
@@ -537,21 +555,20 @@
     <section id="contact" class="contact">
         <div class="container py-8">
             <div class="contact-header">
-                    <div class="w-2-3">
-                        <h1 class="text-center text-3xl">GET FREE <span class="text-red-600">QUOTE</span></h1>
-                        <p class="mx-auto text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Lorem ipsum dolor sit amet,
-                        </p>
-                    </div>
+                <div class="w-2-3">
+                    <h1 class="text-center text-3xl">GET FREE <span class="text-red-600">QUOTE</span></h1>
+                    <p class="mx-auto text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet,
+                    </p>
                 </div>
+            </div>
             <div class="row justify-between items-center gap-x-12 gap-y-12">
                 <div class="contact-column item-stretch">
                     <div class="contact-info-row">
                         <div class="contact-icon-wrapper ">
-                            <div id="contact-icons"
-                                class="contact-icon-box">
+                            <div id="contact-icons" class="contact-icon-box">
                                 <img src="/images/Contact_Icons/home.png" alt="court.png" class="w-1-2 h-auto">
                             </div>
                         </div>
@@ -565,8 +582,7 @@
                     </div>
                     <div class="contact-info-row">
                         <div class="contact-icon-wrapper ">
-                            <div id="contact-icons"
-                                class="contact-icon-box">
+                            <div id="contact-icons" class="contact-icon-box">
                                 <img src="/images/Contact_Icons/email.png" alt="court.png" class="w-1-2 h-auto">
                             </div>
                         </div>
@@ -580,8 +596,7 @@
                     </div>
                     <div class="contact-info-row">
                         <div class="contact-icon-wrapper ">
-                            <div id="contact-icons"
-                                class="contact-icon-box">
+                            <div id="contact-icons" class="contact-icon-box">
                                 <img src="/images/Contact_Icons/telephone.png" alt="court.png" class="w-1-2 h-auto">
                             </div>
                         </div>
@@ -597,33 +612,27 @@
                 </div>
                 <form action="" class="form-columns">
                     <div class="column-30 h-48px ">
-                        <input type="text" name="name" id="name" placeholder="Name"
-                            class="form-input">
+                        <input type="text" name="name" id="name" placeholder="Name" class="form-input">
                     </div>
 
                     <div class="column-30">
-                        <input type="email" name="email" id="email" placeholder="Email"
-                            class="form-input">
+                        <input type="email" name="email" id="email" placeholder="Email" class="form-input">
                     </div>
 
                     <div class="column-30">
-                        <input type="tel" name="phone" id="phone" placeholder="Phone"
-                            class="form-input">
+                        <input type="tel" name="phone" id="phone" placeholder="Phone" class="form-input">
                     </div>
 
                     <div class="w-full">
-                        <input type="address" name="address" id="address" placeholder="Address"
-                            class="form-input">
+                        <input type="address" name="address" id="address" placeholder="Address" class="form-input">
                     </div>
 
                     <div class="w-full">
-                        <textarea name="message" id="message" placeholder="Message"
-                            class="form-textarea"></textarea>
+                        <textarea name="message" id="message" placeholder="Message" class="form-textarea"></textarea>
                     </div>
 
                     <div class="w-full">
-                        <input type="submit"
-                            class=" form-submit ">
+                        <input type="submit" class=" form-submit ">
                     </div>
 
 
