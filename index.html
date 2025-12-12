@@ -8,11 +8,7 @@
     <title>GLOBAL LAWMAKER
     </title>
     <script>
-        let theme = [
-            "black",
-            "white"
-        ]
-        function dropdownFunction() {
+        function dropdownFunction(){
             document.getElementById("dropdown").style.display = "block";
         }
 
@@ -105,7 +101,7 @@
                         <h2 class="text-2xl font-normal text-center mt-1 mb-1">Get Your Estimate</h2>
                         <input type="text" placeholder="Your Full Name *"
                             class="w-full py-2 px-2 border border-gray-300 rounded">
-                        <input type="email" placeholder="Your Email *"
+                        <input id="email" type="email" placeholder="Your Email *"
                             class="w-full py-2 px-2 border border-gray-300 rounded">
                         <input type="tel" placeholder="Your Phone *"
                             class="w-full py-2 px-2 border border-gray-300 rounded">
@@ -653,7 +649,35 @@
         </div>
     </footer>
 
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const navigationButtons = document.getElementById('navigation-buttons');
 
-</body>
+        if (mobileMenuToggle && navigationButtons) {
+            mobileMenuToggle.addEventListener('click', function() {
+                navigationButtons.classList.toggle('active');
+                mobileMenuToggle.classList.toggle('active');
+            });
 
-</html>
+            // Close menu when clicking on a link
+            const navLinks = navigationButtons.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navigationButtons.classList.remove('active');
+                    mobileMenuToggle.classList.remove('active');
+                });
+            });
+        }
+
+        // Email Validation Function
+        function validateEmail(inputId, errorId) {
+            const emailInput = document.getElementById(inputId);
+            const error = document.getElementById(errorId);
+            
+            if (!emailInput || !error) return;
+            
+            emailInput.addEventListener("input", function () {
+                const email = emailInput.value.trim();
+                const pattern = /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i;
+             
